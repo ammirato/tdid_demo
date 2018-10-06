@@ -213,8 +213,8 @@ device.startStreams(rgb=enable_rgb, depth=enable_depth)
 #   Load Model #
 ########################################################
 # load config
-cfg_file = 'configAVD2' #NO FILE EXTENSTION!
-cfg = importlib.import_module('configs.'+cfg_file)
+cfg_file = 'configDemo' #NO FILE EXTENSTION!
+cfg = importlib.import_module(cfg_file)
 cfg = cfg.get_config()
 
 print('Loading ' + cfg.FULL_MODEL_LOAD_NAME + ' ...')
